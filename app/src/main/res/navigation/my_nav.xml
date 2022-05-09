@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/recipeList">
+    <fragment
+        android:id="@+id/recipeList"
+        android:name="com.bafoor.dailymeal.presentation.ui.recipe_list.RecipeList"
+        android:label="RecipeList" >
+        <action
+            android:id="@+id/action_recipeList_to_mealRecipe"
+            app:destination="@id/mealRecipe" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealRecipe"
+        android:name="com.bafoor.dailymeal.presentation.ui.recipe.MealRecipe"
+        android:label="MealRecipe" />
+</navigation>
